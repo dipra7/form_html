@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        .login {
+            margin: 250px auto;
+            width: 400px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background: #EAB543;
+        }
+        .login h1{
+            text-align: center;
+        }
+    
+        input[type=text], input[type=password] {
+            margin: 5px auto;
+            width: 100%;
+            padding: 10px;
+        }
+        input[type=submit] {
+            margin 5px auto;
+            float: right;
+            padding: 5px;
+            width: 90px;
+            border: 1px solid #fff;
+            color: #fff;
+            background: red;
+            cursor: pointer;
+        }
+        
+    </style>
+    <title>FORM REGISTRATION</title>
+</head>
+<body>
+    <div class="login">
+        <form method="post" action="proses_login.php">
+            <h1>FORM REGISTRASI</h1>
+            <br>
+            <label for="nama"> Nama Lengkap</label>
+            <input type="text" name="nama_lengkap" placeholder="Nama Lengkap"><br>
+            
+            <label for="agama">Agama</label>
+                <div>
+                    <select name="agama" id="agama" required>
+                        <option value="" hidden selected>Pilih Salah Satu</option>
+                        <option value="Islam">Islam</option>
+                        <option value="Kristen">Kristen</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Budhha">Budhha</option>
+                        <option value="Katolik">Katolik</option>
+                    </select>
+                </div><br>
+                <legend>Hobi</legend>
+                <label>
+                  <input type="checkbox" name="hobi4" value="HTML"/>belajar HTML
+                </label>
+                <label>
+                  <input type="checkbox" name="hobi4" value="CSS"/>belajar CSS
+                </label>
+                <label>
+                  <input type="checkbox" name="hobi4" value="PHP"/>belajar PHP
+                </label><br><br>
+            <label for="ttl">Tempat tanggal lahir</label>
+            <input type="text" name="ttl" placeholder="Tempat tanggal lahir"><br>
+        
+            <label>Jenis Kelamin</label> 
+                            <input type="radio" name="jeniskelamin" value="laki-laki">
+                            <label for="laki-laki">Laki-Laki</label>
+        
+                            <input type="radio" name="jeniskelamin" value="perempuan">
+                            <label for="perempuan">Perempuan</label><br><br>
+            <label for="">Alamat Rumah</label><br>       
+                    <textarea name="alamat" id="alamat" placeholder="tulis disini" cols="50" rows="5"></textarea><br>
+            
+            <label for="nama">No handphone</label>
+            <input type="text" name="no_hp" placeholder="Nomor Handphone"><br>
+        
+            <label for="nama">E-mail</label>
+            <input type="text" name="email" placeholder="email"><br><br>
+            <input type="checkbox">Ingat Saya
+            <input type="submit" name="kirim" value="Kirim">
+        </form>
+        </div>
+</body>
+</html>
